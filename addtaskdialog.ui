@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddTaskDialog</class>
+ <widget class="QDialog" name="AddTaskDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>271</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Добавление задачи</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QPushButton" name="cancelBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+        margin: 0;
+    background-color: rgb(33, 33, 33); /* Прозрачный фон */
+    border: 2px solid rgb(33, 33, 33); /* Цвет рамки */
+    color: rgb(239, 241, 247); /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    font-size: 16px;
+    border-radius: 0; /* Углы без закруглений */
+}
+
+QPushButton:hover {
+    background-color: transparent; /* Новый цвет фона при наведении курсора */
+    color: rgb(255, 255, 255); /* Изменение цвета текста при наведении */
+    border-color: rgb(255, 255, 255); /* Изменение цвета рамки при наведении */
+}</string>
+       </property>
+       <property name="text">
+        <string>Отменить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="acceptBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+        margin: 0;
+    background-color: rgb(33, 33, 33); /* Прозрачный фон */
+    border: 2px solid rgb(33, 33, 33); /* Цвет рамки */
+    color: rgb(239, 241, 247); /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    font-size: 16px;
+    border-radius: 0; /* Углы без закруглений */
+}
+
+QPushButton:hover {
+    background-color: transparent; /* Новый цвет фона при наведении курсора */
+    color: rgb(255, 255, 255); /* Изменение цвета текста при наведении */
+    border-color: rgb(255, 255, 255); /* Изменение цвета рамки при наведении */
+}</string>
+       </property>
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Название</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="titleEdit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(33, 33, 33);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Описание</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="descriptionEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(33, 33, 33);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Дата и время</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateTimeEdit" name="dateTimeEdit">
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2023</year>
+           <month>12</month>
+           <day>1</day>
+          </datetime>
+         </property>
+         <property name="date">
+          <date>
+           <year>2023</year>
+           <month>12</month>
+           <day>1</day>
+          </date>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>titleEdit</tabstop>
+  <tabstop>descriptionEdit</tabstop>
+  <tabstop>dateTimeEdit</tabstop>
+  <tabstop>cancelBtn</tabstop>
+  <tabstop>acceptBtn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelBtn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>AddTaskDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

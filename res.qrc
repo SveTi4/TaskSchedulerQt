@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.css</file>
+        <file>data.db</file>
+        <file>loading.gif</file>
+        <file>loading-wtf.gif</file>
+        <file>HelpResources/index.html</file>
+        <file>HelpResources/addTask.html</file>
+        <file>HelpResources/delTask.html</file>
+        <file>HelpResources/editTask.html</file>
+    </qresource>
+</RCC>

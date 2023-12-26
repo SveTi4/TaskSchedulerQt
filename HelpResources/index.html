@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-size: 24px;
+        color: white;
+        list-style-type: none;
+    }
+
+    body {
+        background-color: rgb(33, 33, 33);
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .nav-item {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        cursor: pointer;
+        transition: all ease 500ms;
+    }
+
+    .nav-item:hover {
+        background-color: rgba(53, 53, 53, 0.727);
+    }
+
+    .nav-linck {
+        display: block;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Справка по эксплуатации</h1>
+    <br>
+    </hr>
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-linck" href="./addTask.html"> Добавление задачи</a></li>
+        <li class="nav-item"><a class="nav-linck" href="./editTask.html"> Изменение задачи</a></li>
+        <li class="nav-item"><a class="nav-linck" href="./delTask.html"> Удаление задачи</a></li>
+    </ul>
+</body>
